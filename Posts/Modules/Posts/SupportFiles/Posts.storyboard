@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Posts View Controller-->
+        <scene sceneID="Posts-Scene-Identifier">
+            <objects>
+                <viewController storyboardIdentifier="PostsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PostsViewController" customClass="PostsViewController" customModule="Posts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Posts-View-Identifier">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="STc-df-TIY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="PostsViewController" id="oVH-Th-w6s"/>
+                                    <outlet property="delegate" destination="PostsViewController" id="Iel-cl-Qqk"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="STc-df-TIY" firstAttribute="leading" secondItem="Posts-SafeArea-Identifier" secondAttribute="leading" id="CVW-l5-GfR"/>
+                            <constraint firstItem="STc-df-TIY" firstAttribute="top" secondItem="Posts-View-Identifier" secondAttribute="top" id="GBF-FQ-1Z7"/>
+                            <constraint firstItem="STc-df-TIY" firstAttribute="bottom" secondItem="Posts-View-Identifier" secondAttribute="bottom" id="WQL-Mp-Q37"/>
+                            <constraint firstItem="STc-df-TIY" firstAttribute="trailing" secondItem="Posts-SafeArea-Identifier" secondAttribute="trailing" id="mCz-SO-m5c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Posts-SafeArea-Identifier"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="STc-df-TIY" id="pZZ-Vs-AlC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Posts-Placeholder-Identifier" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="272.80000000000001" y="-31.03448275862069"/>
+        </scene>
+    </scenes>
+</document>
