@@ -5,7 +5,7 @@ Project-example with usage VIPER architecture pattern.
 
 ![](https://github.com/bananaRanger/Posts-VIPER/blob/master/Screenshots/demo.png?raw=true)
 
-### Thanks
+### Used in project
 
 #### Tool for generation Viper module:
 
