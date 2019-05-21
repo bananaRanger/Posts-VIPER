@@ -14,3 +14,7 @@ NKSmartViper Code Generator - https://github.com/nkopilovskii/SmartVIPER
 #### Fake Online REST API:
 
 Posts API - https://jsonplaceholder.typicode.com
+
+#### Icons:
+
+Icons8 - https://icons8.com
